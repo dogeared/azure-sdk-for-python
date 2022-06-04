@@ -483,7 +483,7 @@ try {
 
         $provisionerAccount = Retry {
             Connect-AzAccount -Force:$Force -Tenant $TenantId -Credential $provisionerCredential -ServicePrincipal -Environment $Environment @subscriptionArgs
-        }
+        } 10  # Retry 10 times due to timeouts in sovereign clouds
 
         $exitActions += {
             Write-Verbose "Logging out of service principal '$($provisionerAccount.Context.Account)'"
