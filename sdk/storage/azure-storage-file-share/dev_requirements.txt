@@ -5,3 +5,4 @@
 azure-identity
 -e ../azure-storage-blob
 aiohttp>=3.0
+pyjwt>=2.4.0 # not directly required, pinned by Snyk to avoid a vulnerability
