@@ -6,5 +6,5 @@
 -e ../azure-mgmt-keyvault
 ../../nspkg/azure-keyvault-nspkg
 aiohttp>=3.0
-azure-storage-blob==12.6.0
+azure-storage-blob==12.13.0
 parameterized>=0.7.3
